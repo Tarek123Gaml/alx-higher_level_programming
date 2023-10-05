@@ -2,7 +2,10 @@
 import sys
 
 if __name__ == "__main__":
-    argc = len(sys.argv) - 1
-    print("{:d} arguments:".format(argc))
-    for i in range(argc):
-        print("{:d}: {:s}".format(i + 1, sys.argv[i + 1]))
+    pass
+
+argc = len(sys.argv) - 1
+print("{:d} arguments:".format(argc))
+
+for i in range(argc):
+    print("{:d}: {:s}".format(i + 1, sys.argv[i + 1]))
