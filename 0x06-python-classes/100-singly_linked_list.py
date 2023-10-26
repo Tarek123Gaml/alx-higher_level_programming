@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Node  class definintion """
+"""Devines a class Node"""
 
 
 class Node:
