@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Devines class Square"""
+
+
 class Square:
     """Square class"""
 
