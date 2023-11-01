@@ -5,4 +5,4 @@
 class Rectangle:
     """Empty calss
     """
-    pass:
+    pass
