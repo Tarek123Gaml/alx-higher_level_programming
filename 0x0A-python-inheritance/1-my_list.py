@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-"""module with class Mylist"""
+"""
+Module with class MyList
+"""
 
 
 class MyList(list):
-    """class with method print_sorted"""
+    """Class with method print_sorted"""
+    pass
 
     def print_sorted(self):
-        """method that print sorted list"""
+        """Methot that sorted a list"""
 
         print(sorted(list(self)))
