@@ -13,4 +13,4 @@ def from_json_string(my_str):
     Return:
         python data structure
     """
-    return (json.loads(my_str)
+    return (json.loads(my_str))
