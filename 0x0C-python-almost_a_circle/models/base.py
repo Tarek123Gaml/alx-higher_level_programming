@@ -41,4 +41,22 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        ''''''
+        '''creat new object'''
+        from models.rectangle import Rectangle
+        from models.square import Square
+        if cls is Rectangle:
+            new = Rectangle(1, 1)
+        elif cls is Square:
+            new = Square(1)
+        new.update(**dictionary)
+        return new
+
+    @classmethod
+    def load_from_file(cls):
+        '''Loads string from file and unjsonifies.'''
+        from os import path
+        file = "{}.json".format(cls.__name__)
+        if not path.isfile(file):
+            return []
+        with open(file, "r", encoding="utf-8") as f:
+            return [cls.create(**d) for d in cls.from_json_string(f.read())]
