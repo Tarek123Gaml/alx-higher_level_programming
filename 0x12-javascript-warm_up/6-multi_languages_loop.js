@@ -3,6 +3,6 @@
 
 const langs = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for (a of langs) {
-  console.log(a);
+for (let a = 0; a < 3; a++) {
+  console.log(langs[a]);
 }
