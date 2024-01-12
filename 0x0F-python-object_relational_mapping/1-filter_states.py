@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""lists databases"""
 
 import MySQLdb
 from sys import argv
