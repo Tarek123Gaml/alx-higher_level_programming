@@ -9,7 +9,7 @@ if __name__ == "__main__":
                            passwd=argv[2], db=argv[3], charset="utf8")
     cur = conn.cursor()
     cur.execute("SELECT * FROM states ORDER BY states.id ASC")
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        if row[1].startswith("N"):
-            print(row)
+    rows = cur.fetchall()
+    for i in rows:
+        if i[1].startswith("N"):
+            print(i)
