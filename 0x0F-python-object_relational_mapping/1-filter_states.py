@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     cur = conn.cursor()
 
-    cur.execute("select * from states order by id asc")
+    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
     for i in cur.fetchall():
         if i[1].startwith("N"):
             print(i)
