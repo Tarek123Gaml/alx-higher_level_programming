@@ -10,6 +10,7 @@ if __name__ == "__main__":
     cur = conn.cursor()
 
     cur.execute("SELECT * FROM states ORDER BY states.id ASC")
-    for i in cur.fetchall():
+    dd = cur.fetchall()
+    for i in dd:
         if i[1].startwith("N"):
             print(i)
