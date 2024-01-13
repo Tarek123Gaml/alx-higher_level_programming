@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """List all states"""
-
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import (create_engine)
@@ -14,7 +13,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).order_by(State.id).all():
+    state = session.query(State).order_by(State.id).first()
     if state:
         print("{}: {}".format(state.id, state.name))
     else:
