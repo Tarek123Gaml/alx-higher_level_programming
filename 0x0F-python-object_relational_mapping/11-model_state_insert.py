@@ -15,6 +15,6 @@ if __name__ == "__main__":
     session = Session()
     new_state = State(name="Louisiana")
     session.add(new_state)
-    sssion.commit()
+    session.commit()
     print(new_state.id)
     session.close()
